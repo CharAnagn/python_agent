@@ -19,7 +19,7 @@ def get_file_content(working_directory, file_path):
             if os.path.getsize(absolute_file_path) > MAX_CHARS:
                 file_content_string += f'[...File "{file_path}" truncated at {MAX_CHARS} characters.]'
 
-        return file_content_string  # ← Don't forget this!
+        return file_content_string
 
     except Exception as e:
         return f"Error: {e}"
